@@ -1,0 +1,174 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+  width: 1280px;
+  margin: auto;
+}
+
+button{
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: whitesmoke;
+  border: 1px solid lightgray;
+}
+
+button:hover{ background-color: rgba(0, 0, 0, 0.1);}
+
+/* HEADER */
+header{ background-color: whitesmoke;}
+
+.nav{
+  padding: 0 20px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 70px;
+}
+
+/* WRAPPER FOR QUIZ MENU AND QUIZ DISPLAY */
+.wrapper{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background: linear-gradient(to right, #b9f441, #88bd9a);
+}
+
+/* QUIZ MENU */
+.menu{
+  min-height: calc(100vh - 70px);
+  background-color: whitesmoke;
+}
+
+.add-quiz{
+  width: 90%;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.add-quiz input{
+  width: 90%;
+  padding: 8px 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+  border: 1px solid #DDDDDD;
+} 
+
+.add-quiz input:focus{
+  box-shadow: 0 0 5px #88bd9a;
+  border: 1px solid #88bd9a;
+}
+
+/* QUIZ DISPLAY */
+.quiz-questions{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.question{
+  width: 525px;
+  height: auto;
+  margin: 10px 0;
+  color: #000;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.results{
+  width: 525px;
+  height: auto;
+  margin: 10px 0;
+  color: #000;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* OUTPUT SUCCESS, WARNING, or INFO MESSAGES */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbarSuccess1, #snackbarSuccess2, #snackbarWarning1, #snackbarWarning2, #snackbarInfo{
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+#snackbarSuccess1{
+  background-color: limegreen;
+}
+
+#snackbarSuccess2{
+  background-color: limegreen;
+}
+
+#snackbarWarning1{
+  background-color: orange;
+}
+
+#snackbarWarning2{
+  background-color: orange;
+}
+
+#snackbarInfo{
+  background-color: deepskyblue;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbarSuccess1.show, #snackbarSuccess2.show,  #snackbarWarning1.show,  #snackbarWarning2.show, #snackbarInfo.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
