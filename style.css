@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-  width: 1280px;
+  width: 1600px;
   margin: auto;
 }
 
@@ -35,7 +35,7 @@ header{ background-color: whitesmoke;}
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 70px;
+  min-height: 80px;
 }
 
 /* WRAPPER FOR QUIZ MENU AND QUIZ DISPLAY */
@@ -171,4 +171,10 @@ header{ background-color: whitesmoke;}
 @keyframes fadeout {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
+}
+
+@media(max-width: 1600px){
+  .container{
+    width: 100%;
+  }
 }
