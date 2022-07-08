@@ -5,7 +5,6 @@
 }
 
 body{
-  overflow-x: hidden;
   background-color: whitesmoke;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -36,8 +35,8 @@ header{ background-color: whitesmoke;}
 /* WRAPPER FOR QUIZ MENU AND QUIZ DISPLAY */
 .wrapper{
   display: grid;
-  grid-template-columns: 300px 100%;
-    background: linear-gradient(to right, #b9f441, #88bd9a);
+  grid-template-columns: 300px 1fr;
+  background: linear-gradient(to right, #b9f441, #88bd9a);
 }
 
 /* QUIZ MENU */
@@ -80,11 +79,12 @@ header{ background-color: whitesmoke;}
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  overflow-y: auto;
 }
 
 .question{
   width: 525px;
-  height: 270px;
+  min-height: 270px;
   color: #000;
   padding: 20px;
   border-radius: 5px;
