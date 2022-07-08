@@ -5,7 +5,6 @@
 }
 
 body{
-  background-color: whitesmoke;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -21,7 +20,9 @@ button{
 button:hover{ background-color: rgba(0, 0, 0, 0.1);}
 
 /* HEADER */
-header{ background-color: whitesmoke;}
+header{ 
+  background-color: white;
+}
 
 .nav{
   padding: 0 20px;
@@ -43,7 +44,7 @@ header{ background-color: whitesmoke;}
 .menu{
   padding: 20px;
   min-height: calc(100vh - 70px);
-  background-color: whitesmoke;
+  background-color: white;
   overflow-y: auto;
 }
 
@@ -52,6 +53,7 @@ header{ background-color: whitesmoke;}
   padding: 8px 5px;
   outline: none;
   border-radius: 5px;
+  background-color: #f9f9f9;
   border: 1px solid lightgray;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
