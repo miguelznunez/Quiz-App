@@ -22,58 +22,59 @@
   </header>
 
   <!-- WRAPPER FOR QUIZ MENU AND QUIZ DISPLAY-->
-  <div class="container">
-    <div class="wrapper">
+  <div class="wrapper">
 
-      <!-- QUIZ MENU -->
-      <div class="menu">
-        <div class="add-quiz">
-          <h3 style="text-align: center;">Create Quiz</h3>
-          <br>
-          <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);"></p>
-          <br>
-          <h4>Question</h4>
-          <br>
-          <button style="padding: 8px 10px;border-top-right-radius: 0;border-bottom-right-radius: 0;"><i
-              class="fas fa-question"></i></button><input type="text" id="question" placeholder="Question...">
-          <br>
-          <br>
-          <h4>Answers</h4>
-          <br>
-          <button id="btn1" onclick="setBtnColorGreen('btn1')"
-            style="background: whitesmoke;border-bottom-right-radius: 0;border-top-right-radius: 0;"><i
-              class="fas fa-check"></i></button><input type="text" id="answer1" placeholder="Answer...">
-          <br>
-          <br>
-          <button id="btn2" onclick="setBtnColorGreen('btn2')"
-            style="background: whitesmoke;border-bottom-right-radius: 0;border-top-right-radius: 0;"><i
-              class="fas fa-check"></i></button><input type="text" id="answer2" placeholder="Answer...">
-          <br>
-          <br>
-          <button id="btn3" onclick="setBtnColorGreen('btn3')"
-            style="background: whitesmoke;border-bottom-right-radius: 0;border-top-right-radius: 0;"><i
-              class="fas fa-check"></i></button><input type="text" id="answer3" placeholder="Answer...">
-          <br>
-          <br>
-          <button id="btn4" onclick="setBtnColorGreen('btn4')"
-            style="background: whitesmoke;border-bottom-right-radius: 0;border-top-right-radius: 0;"><i
-              class="fas fa-check"></i></button><input type="text" id="answer4" placeholder="Answer...">
-          <br>
-          <br>
-          <button id="addQuestion"><i class="far fa-plus-square"></i> Add Another</button> <button id="addFinish"><i
-              class="far fa-list-alt"></i> Add/Take Quiz</button>
-          <br>
-          <br>
-          <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);;"></p>
-          <br>
-          <button id="deleteQuizBtn" style="border-radius: 5px"> <i class="far fa-trash-alt"></i>
-            Delete Quiz</button>
-        </div>
+    <!-- QUIZ MENU -->
+    <div class="menu">
+      <h3 style="text-align: center;">Create Quiz</h3>
+      <br>
+      <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);"></p>
+      <br>
+      <h4>Question</h4>
+      <br>
+      <div class="input-group">
+        <button style="padding: 8px 10px;border-top-right-radius: 0;border-bottom-right-radius: 0;"><i
+            class="fas fa-question"></i></button><input type="text" id="question" placeholder="Question...">
       </div>
-
-      <!-- QUIZ DISPLAY -->
-      <div class="quiz-questions"></div>
+      <br>
+      <h4>Answers</h4>
+      <br>
+      <div class="input-group">
+        <button id="btn1" onclick="setBtnColorGreen('btn1')"
+          style="background: whitesmoke;border-bottom-right-radius: 0;border-top-right-radius: 0;"><i
+            class="fas fa-check"></i></button><input type="text" id="answer1" placeholder="Answer...">
+      </div>
+      <br>
+      <div class="input-group">
+        <button id="btn2" onclick="setBtnColorGreen('btn2')"
+          style="background: whitesmoke;border-bottom-right-radius: 0;border-top-right-radius: 0;"><i
+            class="fas fa-check"></i></button><input type="text" id="answer2" placeholder="Answer...">
+      </div>
+      <br>
+      <div class="input-group">
+        <button id="btn3" onclick="setBtnColorGreen('btn3')"
+          style="background: whitesmoke;border-bottom-right-radius: 0;border-top-right-radius: 0;"><i
+            class="fas fa-check"></i></button><input type="text" id="answer3" placeholder="Answer...">
+      </div>
+      <br>
+      <div class="input-group">
+        <button id="btn4" onclick="setBtnColorGreen('btn4')"
+          style="background: whitesmoke;border-bottom-right-radius: 0;border-top-right-radius: 0;"><i
+            class="fas fa-check"></i></button><input type="text" id="answer4" placeholder="Answer...">
+      </div>
+      <br>
+      <button id="addQuestion"><i class="far fa-plus-square"></i> Add Another</button> <button id="addFinish"><i
+          class="far fa-list-alt"></i> Add/Take Quiz</button>
+      <br>
+      <br>
+      <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);;"></p>
+      <br>
+      <button id="deleteQuizBtn" style="border-radius: 5px"> <i class="far fa-trash-alt"></i>
+        Delete Quiz</button>
     </div>
+
+    <!-- QUIZ DISPLAY -->
+    <div class="quiz-questions"></div>
   </div>
   
   <!-- OUTPUT SUCCESS, WARNING, or INFO MESSAGES -->
