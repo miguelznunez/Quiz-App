@@ -19,20 +19,6 @@ button{
 
 button:hover{ background-color: rgba(0, 0, 0, 0.1);}
 
-/* HEADER */
-header{ 
-  background-color: white;
-}
-
-.nav{
-  padding: 0 20px;
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: 70px;
-}
-
 /* WRAPPER FOR QUIZ MENU AND QUIZ DISPLAY */
 .wrapper{
   display: grid;
@@ -43,7 +29,7 @@ header{
 /* QUIZ MENU */
 .menu{
   padding: 20px;
-  min-height: calc(100vh - 70px);
+  min-height: 100vh;
   background-color: white;
   overflow-y: auto;
 }
