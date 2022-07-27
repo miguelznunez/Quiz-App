@@ -28,6 +28,7 @@ button:hover{ background-color: rgba(0, 0, 0, 0.1);}
 
 /* QUIZ MENU */
 .menu{
+  width:325px;
   padding: 20px;
   min-height: 100vh;
   background-color: white;
