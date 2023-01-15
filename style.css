@@ -22,13 +22,12 @@ button:hover{ background-color: rgba(0, 0, 0, 0.1);}
 /* WRAPPER FOR QUIZ MENU AND QUIZ DISPLAY */
 .wrapper{
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 325px 1fr;
   background: linear-gradient(to right, #b9f441, #88bd9a);
 }
 
 /* QUIZ MENU */
 .menu{
-  width:325px;
   padding: 20px;
   min-height: 100vh;
   background-color: white;
